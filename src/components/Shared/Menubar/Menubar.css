@@ -1,0 +1,17 @@
+/* menubar style */
+.menubar-container{
+    background-color: rgb(108, 109, 109);
+  }
+  /* every item in menu */
+  .items {
+      list-style: none;
+      margin-right: 30px;
+      font-size: 22px;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 5px;
+      text-decoration: none;
+    }
+    .items li:hover {
+      color: rgb(221, 5, 5);
+    }

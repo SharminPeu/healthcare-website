@@ -1,0 +1,38 @@
+[
+    {
+      "id": "1A",
+      "name": "Emergency Care",
+      "img": "https://i.ibb.co/Vw0tQPn/emergency.jpg",
+      "description": "Our clinic is always ready for urgent care such as Fractures, Cardiology problem, Bites, Minor Burns, Ear Aches, etc."
+    },
+    {
+      "id": "2B",
+      "name": "Lab Tests",
+      "img": "https://i.ibb.co/jyTMmwz/labtest.jpg",
+      "description": "Physicians provide comprehensive medical evaluations and do  for patients of all ages"
+    },
+    {
+      "id": "3C",
+      "name": "Cardiology",
+      "img": "https://i.ibb.co/Qf0TPbQ/cardiology.jpg",
+      "description": "Our cardiologists are skilled at diagnosing and treating diseases of the cardiovascular system"
+    },
+    {
+      "id": "4D",
+      "name": "Operation Theater",
+      "img": "https://i.ibb.co/9yZkyLT/operation-Theater.jpg",
+      "description": "We have all new technologies in our operation theater,and also have many expert doctors .."
+    },
+    {
+      "id": "5E",
+      "name": "Pharmacy",
+      "img": "https://i.ibb.co/VLzxS0v/pharmacy.jpg",
+      "description": "In our pharmacy you can get all type of authentic medicines ,we also take online order  "
+    },
+    {
+      "id": "6F",
+      "name": "24/7 Ambulance",
+      "img": "https://i.ibb.co/fQwNRPv/ambulance.jpg",
+      "description": "We provides emergency ambulance service with life support and freezing support all over the city "
+    }
+  ]

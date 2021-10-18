@@ -9,6 +9,9 @@ import MenuBar from './components/Shared/Menubar/Menubar';
 import NotFound from './components/NotFound/NotFound';
 import Footer from './components/Shared/Footer/Footer';
 import Home from './components/Home/Home';
+import Login from './components/Login/Login';
+import Register from './components/Register/Register';
+import AuthProvider from './context/AuthProvider';
   // import Home from './components/Home/Home';
   // import About from './components/About/About';
   // import Courses from './components/Courses/Courses';
@@ -19,7 +22,8 @@ import Home from './components/Home/Home';
   function App() {
     return (
       <div className="App">
-        <Router>
+       <AuthProvider>
+       <Router>
           <MenuBar></MenuBar>
           
           <Switch>
@@ -29,6 +33,12 @@ import Home from './components/Home/Home';
             <Route path="/home">
               <Home></Home>
             </Route>
+            <Route path="/login">
+              <Login></Login>
+              </Route>
+              <Route path="/register">
+                <Register></Register>
+                </Route>
             {/* <Route path="/about">
               <About></About>
             </Route> */}
@@ -46,6 +56,7 @@ import Home from './components/Home/Home';
           <Footer></Footer>
         </Router>
         
+       </AuthProvider>
       </div>
     );
   }

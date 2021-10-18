@@ -12,6 +12,9 @@ import Home from './components/Home/Home';
 import Login from './components/Login/Login';
 import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
+import Service from './components/Service/Service';
+import PrivateRoute from './components/PrivateRoute/PrivateRoute'
+// import PrivateRoute from './components/PrivateRoute/PrivateRoute';
   // import Home from './components/Home/Home';
   // import About from './components/About/About';
   // import Courses from './components/Courses/Courses';
@@ -42,9 +45,9 @@ import AuthProvider from './context/AuthProvider';
             {/* <Route path="/about">
               <About></About>
             </Route> */}
-            {/* <Route path="/courses">
-            <Courses></Courses>
-            </Route> */}
+            <PrivateRoute path="/services/:serviceId">
+            <Service></Service>
+            </PrivateRoute>
             {/* <Route path="/contact">
             <Contact></Contact>
             </Route> */}

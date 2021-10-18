@@ -12,7 +12,7 @@ const useFirebase=()=>{
     const googleProvider=new GoogleAuthProvider();
     const auth=getAuth();
     
-const[text,setText]=useState('');
+
     const [name, setName] = useState('');
     const [user, setUser] = useState({});
     const [error, setError] = useState("");
@@ -20,6 +20,7 @@ const[text,setText]=useState('');
     const [password, setPassword] = useState("");
     const [useremail, setuserEmail] = useState("");
     const [userpassword, setuserPassword] = useState("");
+    // const [isLogin,setIsLogin]=useState(false);
 
 
     const getName = e =>{
@@ -41,6 +42,10 @@ const[text,setText]=useState('');
     const userPassword = e => {
         setuserPassword(e.target.value)
     }
+
+    // const toggleLogin=e=>{
+    //     setIsLogin(e.target.value)
+    // }
 
     const setUserInfo = () => {
         updateProfile(auth.currentUser, {
@@ -67,12 +72,11 @@ const[text,setText]=useState('');
                 setError("Password should be at least 6 charecters");
                 return;
             }
-            createUserWithEmailAndPassword(auth, email, password,text)
+            createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 setUserInfo();
-                const user = result.user;
+                const user= result.user;
                 // console.log(user);
-                setText('');
                 setError("");
             
                 swal("Good job!", "Account has been created!", "success");
@@ -141,7 +145,7 @@ setUser(user);
         error,
         logOut,
         userRegistration,
-         getName, getEmail, getPassword, userEmail, userPassword, signInWithEmail,text
+         getName, getEmail, getPassword, userEmail, userPassword, signInWithEmail
 
     }
 }

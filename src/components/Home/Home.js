@@ -8,7 +8,7 @@ const Home = () => {
        const[services,setServices]=useState([]);
        // load data from fakedata
        useEffect(()=>{
-           fetch('./fakedata.json')
+           fetch('/fakedata.json')
            .then(res=>res.json())
            .then(data=>setServices(data))
        },[])

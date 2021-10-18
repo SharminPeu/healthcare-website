@@ -6,7 +6,7 @@ import useAuth from '../../../hooks/useAuth';
 
 //set  all options in menubar
 const MenuBar = () => {
-    const { user ,logOut} = useAuth();
+    const { user, logOut } = useAuth();
     return (
         <div className="container menubar-container mt-3 mb-2">
             <nav className="navbar navbar-expand-lg navbar-light">
@@ -21,15 +21,21 @@ const MenuBar = () => {
                         <Link to="/services" className="items text-white fw-bold">
                             <li>Services</li>
                         </Link>
-                        <Link to="/register" className="items text-white fw-bold">
+
+                        {/* <Link to="/register" className="items text-white fw-bold">
                             <li>Register</li>
-                        </Link>
-                        <Link to="/login" className="items text-white fw-bold">
-                            <li>Login</li>
-                        </Link>
-                        <span>{user.displayName} </span>
-                        {
-                            user?.displayName && <button onClick={logOut}>Log Out </button>
+                            
+                        </Link> */}
+                       {user.displayName && <span className="fw-bold mt-2" style={{color:'white'}}>Hello  {user.displayName} </span>}
+
+                        {user.displayName ?
+
+                            <button onClick={logOut}>Log Out </button>
+                            :
+                            <Link to="/login" className="items text-white fw-bold">
+                                <li>Login</li>
+                            </Link>
+
 
                         }
                         <Link to="/about" className="items text-white fw-bold">

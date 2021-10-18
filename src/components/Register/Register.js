@@ -4,11 +4,11 @@ import useAuth from "../../hooks/useAuth";
 // import useAuth from "../../Hooks/UseAuth";
 
 const Register = () => {
-  const {text, error, getName, getEmail, userRegistration, getPassword } =
+  const { error, getName, getEmail, userRegistration, getPassword,googleSignIn } =
     useAuth();
   return (
     <div className="w-25 m-auto p-3 mt-3 border rounded">
-      <h2 className="text-info mb-3">Please, Register</h2>
+      <h2 className="text-info mb-3">Please,Register</h2>
       <div className="text-danger" style={{ height: "50px" }}>
         {error}
       </div>
@@ -51,6 +51,12 @@ const Register = () => {
         />
         <input className="mx-5 btn btn-primary" type="reset" defaultValue="Reset"/>
       </form>
+      <p>Or</p>
+      <p className="text-secondary">Sign in with</p>
+      <button onClick={googleSignIn} className="btn btn-success me-2">
+        Google
+      </button>
+      
       <p className="mt-3">
         Already registered? <Link to="/login">Log in</Link> here{" "}
       </p>

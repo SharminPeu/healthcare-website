@@ -38,12 +38,12 @@ const MenuBar = () => {
 
 
                         }
-                        <Link to="/about" className="items text-white fw-bold">
-                            <li>About Us</li>
+                        <Link to="/doctors" className="items text-white fw-bold">
+                            <li>Doctors</li>
                         </Link>
 
-                        <Link to="/contact" className="items text-white fw-bold">
-                            <li>Contact</li>
+                        <Link to="/appointment" className="items text-white fw-bold">
+                            <li>Appointment</li>
                         </Link>
 
                     </ul>

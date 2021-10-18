@@ -1,0 +1,44 @@
+[
+    {
+      "id": "1Z",
+      "name": "Prof: Farshid Rahman",
+      "specialised": "Cardiology",
+      "img": "https://i.ibb.co/St742fR/photo-1537368910025-700350fe46c7.jpg",
+      "description": "Cardiology is the study and treatment of disorders of the heart and the blood vessels. A person with heart disease or cardiovascular disease may be referred to a cardiologist. Cardiology is a branch of internal medicine.Cardiologist specializes in diagnosing and treating diseases of the cardiovascular system"
+    },
+    {
+      "id": "2M",
+      "name": "Associate Prof: Nourin Nou",
+      "specialised": "Neurology",
+      "img": "https://i.ibb.co/cJrRrGk/depositphotos-8599572-stock-photo-female-doctor.jpg",
+      "description": "Neurology is the branch of medicine concerned with the study and treatment of disorders of the nervous system. The nervous system is a complex, sophisticated system that regulates and coordinates body activities. It has two major divisions: Central nervous system: the brain and spinal cord."
+    },
+    {
+      "id": "3L",
+      "name": "Dr: Mizanur Rahman",
+      "specialised": "Radiology",
+      "img": "https://i.ibb.co/Bnk4HRf/images.jpg",
+      "description": "Radiology is a branch of medicine that uses imaging technology to diagnose and treat disease. Radiology may be divided into two different areas, diagnostic radiology and interventional radiology. He is specialize in radiology"
+    },
+    {
+      "id": "4O",
+      "name": "Dr: Subrin Sultana",
+      "specialised": "Gastrology",
+      "img": "https://i.ibb.co/0GBDcK0/images-3.jpg",
+      "description": "Gastroenterology is the study of the normal function and diseases of the esophagus, stomach, small intestine, colon and rectum, pancreas, gallbladder, bile ducts and liver. ... In essence, all normal activity and disease of the digestive organs is part of the study of Gastroenterology"
+    },
+    {
+      "id": "5E",
+      "name": "Dr:Samiuzzaman",
+      "specialised": "Pediatrician",
+      "img": "https://i.ibb.co/pdGknVH/portrait-smiling-asian-medical-male-doctor-standing-front-blurred-interior-hospital-7191-974.jpg",
+      "description": " pediatrician is a medical doctor who manages the physical, behavioral, and mental care for children from birth until age 18. A pediatrician is trained to diagnose and treat a broad range of childhood illnesses, from minor health problems to serious diseases"
+    },
+    {
+      "id": "6F",
+      "name": "Dr: Shohely Zaman",
+      "specialised": "Gynocolosist",
+      "img": "https://i.ibb.co/DMrhtK5/images-2.jpg",
+      "description": "She is specialised in female reproductive health,She diagnose and treat issues related to the female reproductive tract. "
+    }
+  ]

@@ -12,12 +12,26 @@ const Service = () => {
     const singleService=data.find(td=>td.id===serviceId);
 
     return (
-        <div className="container">
+        <div className="container my-5 image">
+            <h2>We Care about you ...</h2><br/>
+            <div className="card mb-3" >
+  <div className="row g-0">
+    <div className="col-md-4 col-lg-4 col-6">
+      <img src={singleService?.img} className="img-fluid rounded-start" alt="..."/>
+    </div>
+    <div className="col-md-8 col-lg-8 col-6">
+      <div className="card-body text-start">
+        <h3 className="card-title text-primary">{singleService?.name}</h3>
+        <h5 className="card-text text-secondary">{singleService?.description}</h5>
+       
+       
+      </div>
+    </div>
+  </div>
+</div>
+</div>
 
-            <img src={singleService?.img} alt="" />
-            <h1>Name:{singleService?.name}</h1>
-            <h2>Description:{singleService?.description}</h2>
-        </div>
+            
     );
 };
 

@@ -42,27 +42,27 @@ const Appointment = () => {
                     </div>
                 </div>
 
-{/* login form  */}
+{/* Appointment Form */}
 <div className="col-md-7 border form text-dark fw-bolder p-2">
-<form class="row g-3">
+<form className="row g-3">
     
-  <div class="col-md-6">
-    <label for="inputEmail4" class="form-label">Full Name</label>
-    <input type="email" class="form-control" id="inputEmail4" placeholder="Enter Your Full-Name"/>
+  <div className="col-md-6">
+    <label for="inputEmail4" className="form-label">Full Name</label>
+    <input type="email" className="form-control" id="inputEmail4" placeholder="Enter Your Full-Name"/>
   </div>
-  <div class="col-md-6">
-    <label for="inputPassword4" class="form-label">Email</label>
-    <input type="password" class="form-control" id="inputPassword4" placeholder="Enter Your Email"/>
+  <div className="col-md-6">
+    <label for="inputPassword4" className="form-label">Email</label>
+    <input type="password" className="form-control" id="inputPassword4" placeholder="Enter Your Email"/>
   </div>
-  <div class="col-12">
-    <label for="inputAddress" class="form-label">Address</label>
-    <input type="text" class="form-control" id="inputAddress" placeholder="Enter Your Address"/>
+  <div className="col-12">
+    <label for="inputAddress" className="form-label">Address</label>
+    <input type="text" className="form-control" id="inputAddress" placeholder="Enter Your Address"/>
   </div>
-  <div class="">
-  <div class="col-md-6">
+  <div className="">
+  <div className="col-md-6">
   
-  <label class="form-label" for="inputState">Select Doctor</label>
-  <select class="form-select" id="inputState">
+  <label className="form-label" for="inputState">Select Doctor</label>
+  <select className="form-select" id="inputState">
     <option selected>Choose...</option>
     <option value="1">Prof: Farshid Rahman</option>
     <option value="2">Associate Prof: Nourin Nou</option>
@@ -74,10 +74,10 @@ const Appointment = () => {
   </select>
 
 </div>
-<div class="col-md-6">
+<div className="col-md-6">
   
-  <label class="form-label" for="inputState">Select Department</label>
-  <select class="form-select" id="inputState">
+  <label className="form-label" for="inputState">Select Department</label>
+  <select className="form-select" id="inputState">
     <option selected>Choose...</option>
     <option value="1">Cardiology</option>
     <option value="2">Neurology</option>
@@ -92,8 +92,8 @@ const Appointment = () => {
   </div>
  
 
-  <div class="col-12">
-    <button type="submit" class="btn btn-primary">Submit</button>
+  <div className="col-12">
+    <button type="submit" className="btn btn-primary">Submit</button>
   </div>
 </form>
 </div>
@@ -109,15 +109,3 @@ const Appointment = () => {
 export default Appointment;
 
 
-// import React from 'react';
-// import './Appointment.css'
-
-// const Appointment = () => {
-//     return (
-//         <div>
-//             <h2>Make an appoinment </h2>
-//         </div>
-//     );
-// };
-
-// export default Appointment;

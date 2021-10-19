@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <p className="mt-4 ">
               <small>
-                Working to bring significant changes in online-based learning by doing extensive research for course curriculum preparation, student engagements, and looking forward to the flexible education!
+              Our Care Team is Ready to Help You!
               </small>
             </p>
           </div>
@@ -36,16 +36,16 @@ const Footer = () => {
           <div className="footer-menu-container text-start">
             <h3>Explore</h3>
             <ul>
-            <Link className="items" to="/home">
-              <li className="footer-menu">
+            <Link className="footer-menu" to="/home">
+              <li >
                 Home </li></Link>
-              <Link className="items" to="/login"><li className="footer-menu">
+              <Link className="footer-menu" to="/login"><li >
               Login</li></Link>
-              <Link className="items" to="/doctors">
-              <li className="footer-menu">
+              <Link className="footer-menu" to="/doctors">
+              <li >
               Doctors </li></Link>
-              <Link className="items" to="/appointment">
-              <li className="footer-menu">
+              <Link className="footer-menu" to="/appointment">
+              <li >
               Appointment</li></Link>
             </ul>
           </div>

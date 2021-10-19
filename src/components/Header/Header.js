@@ -15,58 +15,30 @@ const Header = () => {
             </div>
             <div className="carousel-inner ">
               <div className="carousel-item active">
-                <img src="https://i.ibb.co/sJTYKMc/Medical-technology-telemedicine-concept-Stethoscope-with-medical-icons-on-virtual-screen-for-medical.jpg" className="d-block w-100 header-img img-fluid" alt="..." />
+                <img src="https://i.ibb.co/YPJrhrQ/General-practitioner-and-young-nurse-wearing-surgical-face-mask-against-covid-19-while-having-a-disc.jpg" className="d-block w-100 header-img img-fluid" alt="..." />
                 <div className="carousel-caption d-none text-dark fw-bold d-md-block">
-                  <h5 className="fs-4">We Care About You
-Healthy, Medical, Doctor..Your Health Care is
-Our Responsibility</h5>
-                  <p>We work to take care of your health and body.</p>
+                  
+                  <p className="fs-4 text-success">We work to take care of your health and body.</p>
                 </div>
               </div>
               <div className="carousel-item">
-                <img src="https://i.ibb.co/YPJrhrQ/General-practitioner-and-young-nurse-wearing-surgical-face-mask-against-covid-19-while-having-a-disc.jpg" className="d-block w-100 img-fluid header-img" alt="..." />
+                <img src="https://i.ibb.co/ChK06cz/Bed-in-hallway-The-concept-of-working-stressful-environment.jpg" className="d-block w-100 img-fluid header-img" alt="..." />
                 <div className="carousel-caption d-none text-dark fw-bold d-md-block mb-5">
 
-                  <h5 className="fs-4">We Care About You
-Healthy, Medical, Doctor..Your Health Care is
-Our Responsibility</h5>
-                  <p>We work to take care of your health and body.</p>
+                 
+                  <p className="fs-4 text-success">We work to take care of your health and body.</p>
                 </div>
               </div>
               <div className="carousel-item">
                 <img src="https://i.ibb.co/4tNfWqb/Hand-holding-plus-sign-virtual-means-to-offer-positive-thing-like-benefits-personal-development-soci.jpg" className="d-block w-100 img-fluid header-img" alt="..." />
                 <div className="carousel-caption d-none text-dark fw-bold d-md-block">
 
-                  <h5 className="fs-4">We Care About You
-Healthy, Medical, Doctor..Your Health Care is
-Our Responsibility</h5>
-                  <p>We work to take care of your health and body.</p>
+          
+                  <p className="fs-4 text-success">We work to take care of your health and body.</p>
                 </div>
               </div>
-              <div className="carousel-item">
-                <img src="https://i.ibb.co/XsVyD3f/Woman-watching-a-laptop-screen-while-stretching-her-hand-and-typing-on-it.jpg" className="d-block w-100 img-fluid header-img" alt="..." />
-                <div className="carousel-caption d-none text-dark fw-bold d-md-block">
-
-                  <h5 className="fs-4">We Care About You
-Healthy, Medical, Doctor..Your Health Care is
-Our Responsibility</h5>
-                  <p>We work to take care of your health and body.</p>
-                </div>
-              </div>
-              <div className="carousel-item">
-                <img src="https://i.ibb.co/ChK06cz/Bed-in-hallway-The-concept-of-working-stressful-environment.jpg" className="d-block w-100 img-fluid header-img" alt="..." />
-                <div className="carousel-caption d-none text-dark fw-bold d-md-block">
-
-                  <h5 className="fs-4">We Care About You
-Healthy, Medical, Doctor..Your Health Care is
-Our Responsibility</h5>
-                  <p>
-                  We work to take care of your health and body.
-
-
-                  </p>
-                </div>
-              </div>
+           
+              
             </div>
             <button className="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
               <span className="carousel-control-prev-icon" aria-hidden="true"></span>

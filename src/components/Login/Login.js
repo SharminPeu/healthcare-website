@@ -71,7 +71,7 @@ const Login = () => {
         Google
       </button>
       <p className="mt-3">
-        New user? <Link to="/register">Register here</Link>
+        New user? <Link className="text-decoration-none" to="/register">Register here</Link>
       </p>
     </div>
   );
@@ -79,31 +79,3 @@ const Login = () => {
 
 export default Login;
 
-// import React from 'react';
-// import { Link } from 'react-router-dom';
-// import useAuth from '../../hooks/useAuth';
-
-
-// const Login = () => {
-//     const {signInUsingGoogle}=useAuth();
-//     return (
-//         <div>
-//             <h2>Please login</h2>
-//             <form >
-//                 <label htmlFor="email">Email:</label>
-//                 <input type="text" name="email"/>
-//                 <br/>
-//                 <label htmlFor="password">Password:</label>
-//                 <input type="password" name="password"/>
-//             </form>
-//             <div>
-//             <button onClick={signInUsingGoogle}>Google sign in</button>
-//             </div>
-            
-//             <br />
-//             <Link to="/register">New User?</Link>
-//         </div>
-//     );
-// };
-
-// export default Login;

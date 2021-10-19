@@ -19,7 +19,7 @@ const Home = () => {
             </div>
             <div className="text-center course-title">
             <h2><span className="text-primary">We-Cares</span> Services</h2>
-            <p className="mb-5">Explore all of our courses and pick your suitable ones to enroll and start learning with<br/> us! We ensure that you will never regret it!</p>
+            <p className="mb-5">Our main moto to give the best service to all..We insure your better treatment from <br/> us! We claim that you will never regret it!</p>
             </div>
             <div className="mx-auto container">
                 <div className="mx-auto row">

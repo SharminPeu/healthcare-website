@@ -1,4 +1,4 @@
-import logo from './logo.svg';
+
 import './App.css';
   import {
     BrowserRouter as Router,
@@ -18,12 +18,7 @@ import PrivateRoute from './components/PrivateRoute/PrivateRoute'
 import Appointment from './components/Appointment/Appointment';
 
 import DoctorList from './components/DoctorList/DoctorList';
-// import PrivateRoute from './components/PrivateRoute/PrivateRoute';
-  // import Home from './components/Home/Home';
-  // import About from './components/About/About';
-  // import Courses from './components/Courses/Courses';
-  
-  // import Contact from './components/Contact/Contact';
+
   
   // set routing
   function App() {

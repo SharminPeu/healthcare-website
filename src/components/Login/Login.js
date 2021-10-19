@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link,useLocation,useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 // import useAuth from "../../Hooks/UseAuth";
 
@@ -11,6 +11,29 @@ const Login = () => {
     userPassword,
     error,
   } = useAuth();
+  const location=useLocation();
+  const history=useHistory();
+//   console.log('came from',location.state?.from);
+  const redirect_uri=location.state?.from || 'home'
+  const handleEmailLogin=()=>{
+    signInWithEmail()
+    .then(result=>{
+        history.push(redirect_uri);
+    })
+  }
+//   custom google login system
+  const handleGoogleLogin=()=>{
+    googleSignIn()
+    .then(result=>{
+        // console.log(result.user);
+        // setUser(result.user)
+        history.push(redirect_uri)
+    })
+    // .catch(error=>{
+    //     setError(error.message);
+    //     })
+  }
+  
   return (
     <div className="w-25 m-auto p-3 mt-3 border rounded">
       <h2 className="text-secondary mb-3">Please, Log in</h2>
@@ -35,7 +58,7 @@ const Login = () => {
           placeholder="Password"
         />
         <input
-          onClick={signInWithEmail}
+          onClick={handleEmailLogin}
           className="btn btn-secondary mb-3"
           type="submit"
           value="Login"
@@ -44,7 +67,7 @@ const Login = () => {
       </form>
       <p>Or</p>
       <p className="text-secondary">Sign in with</p>
-      <button onClick={googleSignIn} className="btn btn-success me-2">
+      <button onClick={handleGoogleLogin} className="btn btn-success me-2">
         Google
       </button>
       <p className="mt-3">

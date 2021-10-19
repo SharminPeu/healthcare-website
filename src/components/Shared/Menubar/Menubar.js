@@ -18,9 +18,9 @@ const MenuBar = () => {
                         <Link to="/home" className="items text-white fw-bold">
                             <li>Home</li>
                         </Link>
-                        <Link to="/services" className="items text-white fw-bold">
+                        {/* <Link to="/services" className="items text-white fw-bold">
                             <li>Services</li>
-                        </Link>
+                        </Link> */}
 
                         {/* <Link to="/register" className="items text-white fw-bold">
                             <li>Register</li>

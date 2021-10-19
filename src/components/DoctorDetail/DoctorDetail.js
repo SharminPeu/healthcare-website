@@ -1,8 +1,7 @@
 import React from 'react';
-import './ShowDoctors.css'
+import './DoctorDetail.css'
 
-// Show ShowDoctors in ShowDoctors section
-const ShowDoctors = (props) => {
+const DoctorDetail = (props) => {
     const { name, img,specialised, description } = props.doctor;
 
     return (
@@ -33,4 +32,5 @@ const ShowDoctors = (props) => {
     );
 };
 
-export default ShowDoctors;
+
+export default DoctorDetail;

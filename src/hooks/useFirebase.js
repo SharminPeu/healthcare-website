@@ -97,31 +97,32 @@ const useFirebase=()=>{
                 setError("Please give your password")
                 return;
             }
-            signInWithEmailAndPassword(auth, useremail, userpassword)
-            .then(result => {
-                const user = result.user;
-                console.log(user);
-                setUser(result.user)
-                setError('');
-                    swal("Sign in Successful!", "Welcome back !", "info")
+           return signInWithEmailAndPassword(auth, useremail, userpassword)
+            // .then(result => {
+            //     const user = result.user;
+            //     console.log(user);
+            //     setUser(result.user)
+            //     setError('');
+            //         swal("Sign in Successful!", "Welcome back !", "info")
                     
-            })
+            // })
             
-            .catch((error) => {
-                setError(error.message);
-            })
+            // .catch((error) => {
+            //     setError(error.message);
+            // })
         }
 
    const googleSignIn=()=>{
-signInWithPopup(auth,googleProvider)
-.then(result=>{
-    console.log(result.user);
-    setUser(result.user)
-})
-.catch(error=>{
-    setError(error.message);
-    })
-}
+ return signInWithPopup(auth,googleProvider)
+   }
+// .then(result=>{
+//     console.log(result.user);
+//     setUser(result.user)
+// })
+// .catch(error=>{
+//     setError(error.message);
+//     })
+// }
 const logOut=()=>{
 signOut(auth)
 .then(()=>{

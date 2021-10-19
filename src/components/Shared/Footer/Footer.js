@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import "./Footer.css"
 // use fontawesome icon here
 const Footer = () => {
@@ -9,7 +10,7 @@ const Footer = () => {
       <div className="row">
         <div className="col-md-5">
           <div className="left-container text-start">
-            <h3>e-Cademy Learning</h3>
+            <h3>We-care Healthcare</h3>
             <div className="icons-container d-flex text-center ">
               <div className="icon me-2">
                 <i className="fab fa-instagram"></i>
@@ -35,10 +36,17 @@ const Footer = () => {
           <div className="footer-menu-container text-start">
             <h3>Explore</h3>
             <ul>
-              <li className="footer-menu">Home</li>
-              <li className="footer-menu">Courses</li>
-              <li className="footer-menu">Contact us</li>
-              <li className="footer-menu"> About us</li>
+            <Link className="items" to="/home">
+              <li className="footer-menu">
+                Home </li></Link>
+              <Link className="items" to="/login"><li className="footer-menu">
+              Login</li></Link>
+              <Link className="items" to="/doctors">
+              <li className="footer-menu">
+              Doctors </li></Link>
+              <Link className="items" to="/appointment">
+              <li className="footer-menu">
+              Appointment</li></Link>
             </ul>
           </div>
         </div>
@@ -58,7 +66,7 @@ const Footer = () => {
                 <i class="far fa-envelope me-2"></i>
               </div>
               <div>
-                <h6>learn@e-cademy.com </h6>
+                <h6>we-care@gmail.com </h6>
               </div>
             </div>
             <div className="phone d-flex align-items-center justify-content-center mt-4">
@@ -68,14 +76,14 @@ const Footer = () => {
               <div>
                 <h6>
                   2750 Quadra Street Victoria Road,
-                  <br /> 102 1st Avenue, New York,Canada
+                  <br /> 102 1st Avenue,Gulshan,Bangladesh
                 </h6>
               </div>
             </div>
           </div>
         </div>
         <p className="mt-5 text-center">
-          <small>e-Cademy <i className="fas fa-copyright "></i>. All rights reserved.</small>
+          <small>we-care <i className="fas fa-copyright "></i>. All rights reserved.</small>
         </p>
       </div>
     </div>

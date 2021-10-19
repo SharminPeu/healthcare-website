@@ -1,12 +1,11 @@
 import React, { useEffect, useState } from 'react';
-import ShowDoctors from '../ShowDoctors/ShowDoctors';
-
-const Doctors = () => {
-    // set data from fakedata 
+import DoctorDetail from '../DoctorDetail/DoctorDetail';
+const DoctorList = () => {
+            // set data from fakedata 
 const [doctor,setDoctor]=useState([]);
 // load data from fakedata 
     useEffect(()=>{
-        fetch('/doctorData.json')
+        fetch('./doctorsData.json')
         .then(res=>res.json())
         .then(data=>setDoctor(data))
     },[])
@@ -18,12 +17,12 @@ const [doctor,setDoctor]=useState([]);
                <h2>Our Doctors   <span className="text-primary">Meet our Specialists</span>... </h2>
                    <div className="row">
                    {
-                       doctor.map((doctor)=>(<ShowDoctors
+                       doctor.map((doctor)=>(<DoctorDetail
                         key={doctor.id}
                         doctor={doctor}
 
                         
-                        ></ShowDoctors>
+                        ></DoctorDetail>
                            
 
                        ))
@@ -33,8 +32,8 @@ const [doctor,setDoctor]=useState([]);
            </div>
           
         </div>
-        
+    
     );
 };
 
-export default Doctors;
+export default DoctorList;

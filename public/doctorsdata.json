@@ -30,14 +30,14 @@
     {
       "id": "5E",
       "name": "Dr:Samiuzzaman",
-      "specialised": "Pediatrician",
+      "specialised": "Pediatric",
       "img": "https://i.ibb.co/pdGknVH/portrait-smiling-asian-medical-male-doctor-standing-front-blurred-interior-hospital-7191-974.jpg",
       "description": " pediatrician is a medical doctor who manages the physical, behavioral, and mental care for children from birth until age 18. A pediatrician is trained to diagnose and treat a broad range of childhood illnesses, from minor health problems to serious diseases"
     },
     {
       "id": "6F",
       "name": "Dr: Shohely Zaman",
-      "specialised": "Gynocolosist",
+      "specialised": "Gynocolosy",
       "img": "https://i.ibb.co/DMrhtK5/images-2.jpg",
       "description": "She is specialised in female reproductive health,She diagnose and treat issues related to the female reproductive tract. "
     }

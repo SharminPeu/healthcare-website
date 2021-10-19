@@ -14,8 +14,10 @@ import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import Service from './components/Service/Service';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute'
-import Doctors from './components/Doctors/Doctors';
+
 import Appointment from './components/Appointment/Appointment';
+
+import DoctorList from './components/DoctorList/DoctorList';
 // import PrivateRoute from './components/PrivateRoute/PrivateRoute';
   // import Home from './components/Home/Home';
   // import About from './components/About/About';
@@ -45,14 +47,19 @@ import Appointment from './components/Appointment/Appointment';
                 <Register></Register>
                 </Route>
             <Route path="/doctors">
-              <Doctors></Doctors>
+              <DoctorList></DoctorList>
             </Route>
+            {/* <Route to="/service">
+              <ShowServices></ShowServices>
+              </Route> */}
             <PrivateRoute path="/services/:serviceId">
             <Service></Service>
+      
             </PrivateRoute>
             <Route path="/appointment">
             <Appointment></Appointment>
             </Route>
+
             <Route path="*">
               <NotFound></NotFound>
             </Route>

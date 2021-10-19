@@ -18,7 +18,7 @@ const Header = () => {
                 <img src="https://i.ibb.co/YPJrhrQ/General-practitioner-and-young-nurse-wearing-surgical-face-mask-against-covid-19-while-having-a-disc.jpg" className="d-block w-100 header-img img-fluid" alt="..." />
                 <div className="carousel-caption d-none text-dark fw-bold d-md-block">
                   
-                  <p className="fs-4 text-success">We work to take care of your health and body.</p>
+                  <p className="fs-4 text-dark">We work to take care of your health and body.</p>
                 </div>
               </div>
               <div className="carousel-item">
@@ -26,7 +26,7 @@ const Header = () => {
                 <div className="carousel-caption d-none text-dark fw-bold d-md-block mb-5">
 
                  
-                  <p className="fs-4 text-success">We work to take care of your health and body.</p>
+                  <p className="fs-4 text-dark">We work to take care of your health and body.</p>
                 </div>
               </div>
               <div className="carousel-item">
@@ -34,7 +34,7 @@ const Header = () => {
                 <div className="carousel-caption d-none text-dark fw-bold d-md-block">
 
           
-                  <p className="fs-4 text-success">We work to take care of your health and body.</p>
+                  <p className="fs-4 text-dark">We work to take care of your health and body.</p>
                 </div>
               </div>
            

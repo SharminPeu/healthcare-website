@@ -21,7 +21,7 @@ history.push('/home')
         <div className="container my-5 image">
             <h2>We Care about you ...</h2><br/>
             <div className="card mb-3" >
-  <div className="row g-0">
+  <div className="row g-0 service_single">
     <div className="col-md-4 col-lg-4 col-6">
       <img src={singleService?.img} className="img-fluid rounded-start" alt="..."/>
     </div>
@@ -33,7 +33,7 @@ history.push('/home')
     </div>
   
 </div>
-<div><button onClick={handleClick}>Back to Home</button>
+<div><button className="btn btn-warning mb-2 text-white" onClick={handleClick}>Back to Home</button>
 </div>
 </div>
 </div>

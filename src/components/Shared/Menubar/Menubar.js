@@ -26,11 +26,11 @@ const MenuBar = () => {
                             <li>Register</li>
                             
                         </Link> */}
-                       {user.displayName && <span className="fw-bold mt-2" style={{color:'white'}}>Hello  {user.displayName} </span>}
+                       {user.displayName && <span className="fw-bold mt-2" style={{color:'lightblue'}}>Hello  {user.displayName} </span>}
 
                         {user.displayName ?
 
-                            <button onClick={logOut}>Log Out </button>
+                            <button className=" mx-2 border-0 btn btn-light" onClick={logOut}>Log Out </button>
                             :
                             <Link to="/login" className="items text-white fw-bold">
                                 <li>Login</li>

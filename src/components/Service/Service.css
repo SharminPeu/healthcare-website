@@ -1,5 +1,12 @@
+.service_single{
+    border: 1px solid lightgray;
+    box-shadow: 4px 4px 2px rgb(240, 247, 252);
+    background-color: lightyellow;
+}
+
 .image img{
     height: 200px;
     width: 100%;
-    /* object-fit:cover; */
+    border-radius: 2px;
+
 }

@@ -8,7 +8,7 @@ const{user}=useAuth();
 <Route
 {...rest}
 render={({ location }) =>
-        user?.displayName ? (
+        user?.email ? (
           children
         ) : (
           <Redirect

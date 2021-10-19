@@ -109,16 +109,15 @@ const useFirebase=()=>{
         // set google sign in 
 
    const googleSignIn=()=>{
- return signInWithPopup(auth,googleProvider)
-   }
-// .then(result=>{
-//     console.log(result.user);
-//     setUser(result.user)
-// })
-// .catch(error=>{
-//     setError(error.message);
-//     })
-// }
+  signInWithPopup(auth,googleProvider)
+.then(result=>{
+    console.log(result.user);
+    setUser(result.user)
+})
+.catch(error=>{
+    setError(error.message);
+    })
+}
 const logOut=()=>{
 signOut(auth)
 .then(()=>{

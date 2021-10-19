@@ -1,6 +1,6 @@
 import React from "react";
 import './Login.css'
-import { Link,useLocation,useHistory } from "react-router-dom";
+import { Link} from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 // import useAuth from "../../Hooks/UseAuth";
 
@@ -12,28 +12,7 @@ const Login = () => {
     userPassword,
     error,
   } = useAuth();
-  const location=useLocation();
-  const history=useHistory();
-//   console.log('came from',location.state?.from);
-  const redirect_uri=location.state?.from || 'home'
-  // const handleEmailLogin=()=>{
-  //   ()
-  //   .then(result=>{
-  //       history.push('/home');
-  //   })
-  // }
-//   custom google login system
-  const handleGoogleLogin=()=>{
-    googleSignIn()
-    .then(result=>{
-        // console.log(result.user);
-        // setUser(result.user)
-        history.push(redirect_uri)
-    })
-    // .catch(error=>{
-    //     setError(error.message);
-    //     })
-  }
+ 
   
   return (
     <div className=" login w-25 m-auto p-3 mt-3 border rounded ">
@@ -69,7 +48,7 @@ const Login = () => {
       </form>
       <p>Or</p>
       <p className="text-secondary">Sign in with</p>
-      <button onClick={handleGoogleLogin} className="btn btn-success me-2">
+      <button onClick={googleSignIn} className="btn btn-success me-2">
         Google
       </button>
       <p className="mt-3">

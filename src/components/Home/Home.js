@@ -17,6 +17,8 @@ const Home = () => {
             <div>
                 <Header></Header>
             </div>
+
+            {/* servicec part  */}
             <div className="text-center course-title">
             <h2><span className="text-primary">We-Cares</span> Services</h2>
             <p className="mb-5">Our main moto to give the best service to all..We insure your better treatment from <br/> us! We claim that you will never regret it!</p>

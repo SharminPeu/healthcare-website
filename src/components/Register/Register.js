@@ -1,24 +1,16 @@
 import React from "react";
-import { Link,useHistory,useLocation } from "react-router-dom";
+import { Link} from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 // import useAuth from "../../Hooks/UseAuth";
 
 const Register = () => {
   // const location=useLocation();
-  const history=useHistory();
+  // const history=useHistory();
   const { error, getName, getEmail, userRegistration, getPassword,googleSignIn } =
     useAuth();
-    const redirect_uri= 'home'
+  
 
-    //   custom google login system
-  const handleGoogleLogin=()=>{
-    googleSignIn()
-    .then(result=>{
-        // console.log(result.user);
-        // setUser(result.user)
-        history.push(redirect_uri)
-    })
-  }
+
   return (
     <div className=" login w-25 m-auto p-3 mt-3 border rounded">
       <h2 className="text-info mb-3">Please,Register</h2>
@@ -66,7 +58,7 @@ const Register = () => {
       </form>
       <p>Or</p>
       <p className="text-secondary">Sign in with</p>
-      <button onClick={handleGoogleLogin} className="btn btn-success me-2">
+      <button onClick={googleSignIn} className="btn btn-success me-2">
         Google
       </button>
       

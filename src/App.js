@@ -14,10 +14,9 @@ import Register from './components/Register/Register';
 import AuthProvider from './context/AuthProvider';
 import Service from './components/Service/Service';
 import PrivateRoute from './components/PrivateRoute/PrivateRoute'
-
 import Appointment from './components/Appointment/Appointment';
-
 import DoctorList from './components/DoctorList/DoctorList';
+
 
   
   // set routing
@@ -44,9 +43,6 @@ import DoctorList from './components/DoctorList/DoctorList';
             <Route path="/doctors">
               <DoctorList></DoctorList>
             </Route>
-            {/* <Route to="/service">
-              <ShowServices></ShowServices>
-              </Route> */}
             <PrivateRoute path="/services/:serviceId">
             <Service></Service>
       
@@ -54,7 +50,6 @@ import DoctorList from './components/DoctorList/DoctorList';
             <Route path="/appointment">
             <Appointment></Appointment>
             </Route>
-
             <Route path="*">
               <NotFound></NotFound>
             </Route>

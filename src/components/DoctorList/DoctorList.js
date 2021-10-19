@@ -16,8 +16,8 @@ const [doctor,setDoctor]=useState([]);
                <div className="col-md-12 mt-5">
                <h2>Our Doctors   <span className="text-primary">Meet our Specialists</span>... </h2>
                    <div className="row">
-                       <h1>hello</h1>
-                    {
+                       
+                       {
                        doctor.map((d)=>(<DoctorDetail
                         key={d.id}
                         doctor={d}
@@ -27,7 +27,7 @@ const [doctor,setDoctor]=useState([]);
                            
 
                        ))
-                   } 
+                   }
                </div>
                </div>
            </div>

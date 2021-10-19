@@ -20,9 +20,8 @@ const useFirebase=()=>{
     const [password, setPassword] = useState("");
     const [useremail, setuserEmail] = useState("");
     const [userpassword, setuserPassword] = useState("");
-    // const [isLogin,setIsLogin]=useState(false);
 
-
+// set email sign in 
     const getName = e =>{
         setName(e.target.value);
     }
@@ -42,10 +41,6 @@ const useFirebase=()=>{
     const userPassword = e => {
         setuserPassword(e.target.value)
     }
-
-    // const toggleLogin=e=>{
-    //     setIsLogin(e.target.value)
-    // }
 
     const setUserInfo = () => {
         updateProfile(auth.currentUser, {
@@ -97,20 +92,21 @@ const useFirebase=()=>{
                 setError("Please give your password")
                 return;
             }
-           return signInWithEmailAndPassword(auth, useremail, userpassword)
-            // .then(result => {
-            //     const user = result.user;
-            //     console.log(user);
-            //     setUser(result.user)
-            //     setError('');
-            //         swal("Sign in Successful!", "Welcome back !", "info")
+            signInWithEmailAndPassword(auth, useremail, userpassword)
+            .then(result => {
+                const user = result.user;
+                console.log(user);
+                setUser(result.user)
+                setError('');
+                    swal("Sign in Successful!", "Welcome back !", "info")
                     
-            // })
+            })
             
-            // .catch((error) => {
-            //     setError(error.message);
-            // })
+            .catch((error) => {
+                setError(error.message);
+            })
         }
+        // set google sign in 
 
    const googleSignIn=()=>{
  return signInWithPopup(auth,googleProvider)
@@ -139,6 +135,7 @@ setUser(user);
         }
     })
 },[]);
+
 
     return{
         user,

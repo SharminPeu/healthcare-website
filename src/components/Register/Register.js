@@ -20,7 +20,7 @@ const Register = () => {
     })
   }
   return (
-    <div className="w-25 m-auto p-3 mt-3 border rounded">
+    <div className=" login w-25 m-auto p-3 mt-3 border rounded">
       <h2 className="text-info mb-3">Please,Register</h2>
       <div className="text-danger" style={{ height: "50px" }}>
         {error}

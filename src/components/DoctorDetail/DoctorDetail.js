@@ -1,6 +1,6 @@
 import React from 'react';
 import './DoctorDetail.css'
-
+// show doctors 
 const DoctorDetail = (props) => {
     const { name, img,specialised, description } = props.doctor;
 
@@ -18,7 +18,7 @@ const DoctorDetail = (props) => {
                         <h5 className="fw-bold">{name}</h5>
                         <p> <span className="text-secondary fw-bold ">Specialised In: </span><span className="fw-bold text-primary">{specialised}</span> </p>
 
-                        <p> <span className="text-secondary fw-bold "> </span> <span className="text-primary fw-bold">{description}</span></p>
+                        <p> <span className="text-secondary fw-bold "> </span> <span className="text-info fw-bold">{description}</span></p>
                         <footer >
                         <div className="text-center">
                             <button className="btn btn-warning ">Make An Appointment</button>

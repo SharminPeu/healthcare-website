@@ -1,4 +1,5 @@
 import React from "react";
+import './Login.css'
 import { Link,useLocation,useHistory } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
 // import useAuth from "../../Hooks/UseAuth";
@@ -15,17 +16,17 @@ const Login = () => {
   const history=useHistory();
 //   console.log('came from',location.state?.from);
   const redirect_uri=location.state?.from || 'home'
-  const handleEmailLogin=()=>{
-    signInWithEmail()
-    .then(result=>{
-        history.push(redirect_uri);
-    })
-  }
+  // const handleEmailLogin=()=>{
+  //   ()
+  //   .then(result=>{
+  //       history.push('/home');
+  //   })
+  // }
 //   custom google login system
   const handleGoogleLogin=()=>{
     googleSignIn()
     .then(result=>{
-        console.log(result.user);
+        // console.log(result.user);
         // setUser(result.user)
         history.push(redirect_uri)
     })
@@ -35,12 +36,12 @@ const Login = () => {
   }
   
   return (
-    <div className="w-25 m-auto p-3 mt-3 border rounded">
-      <h2 className="text-secondary mb-3">Please, Log in</h2>
-      <div className="text-danger" style={{ height: "50px" }}>
+    <div className=" login w-25 m-auto p-3 mt-3 border rounded ">
+      <h2 className="  text-secondary mb-3">Please, Log in</h2>
+      <div className="  text-danger" style={{ height: "50px" }}>
         {error}
       </div>
-      <form>
+      <form className="">
         <input
           onChange={userEmail}
           className="form-control mb-3"
@@ -58,12 +59,13 @@ const Login = () => {
           placeholder="Password"
         />
         <input
-          onClick={handleEmailLogin}
+          onClick={signInWithEmail}
           className="btn btn-secondary mb-3"
           type="submit"
           value="Login"
+        
         />
-        <input className="btn btn-info mb-3 mx-5" type="reset" defaultValue="Reset"/>
+        <input className="btn btn-info mb-3 mx-2" type="reset" defaultValue="Reset"/>
       </form>
       <p>Or</p>
       <p className="text-secondary">Sign in with</p>

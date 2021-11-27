@@ -2,11 +2,13 @@
 
 ## Project Description
 * Its a healthcare service center site
-* Here we have different section in our page,People can visit our home page and for see the service detail they have to be must login from this website.
-* We use two type of login system in our website, one is email, password and another one is google signIn method.
-* They can make an appointment from here
-* They also see our specialised dectors
-* In this project we use bootstrap framework and customised Css and for icon we use fontawesome
+* It’s a responsive healthcare related website. Before login use can see only the homepage.
+*	Can register if the user is new or can log in if he/she is already registered.
+*	Users can see the details of the given services provided here if a user is logged in.
+*	Can see the doctor’s details and make an appointment.Fully responsive.
+
+## Technology Used:
+* HTML, CSS, FontAwesome, React.js, React Router, Rest Api, Bootstrap, Firebase,Netlify.
 
 # Live site Link [https://we-care-healthcare.netlify.app/]
 
